@@ -1,3 +1,22 @@
-body {
-  background-color: blue;
+.father {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  /* main axis에 영향을 줌*/
+  justify-content: center;
+  /* cross axis에 영향을 줌*/
+  align-items: flex-end;
+
+}
+.box {
+  background-color: skyblue;
+  width: 200px;
+  height: 200px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
