@@ -1,22 +1,71 @@
-.father {
+.container {
+  background-color: whitesmoke;
+  width: 650px;
+  height: 1000px;
+  margin: 100px;
+  padding: 35px;
+  box-shadow: 15px 5px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 100vh;
-  /* main axis에 영향을 줌*/
-  justify-content: center;
-  /* cross axis에 영향을 줌*/
-  align-items: flex-end;
-
+  justify-content: space-between;
 }
-.box {
-  background-color: skyblue;
+
+
+/*header 영역*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.title {
+  font-size: 8rem;
+  font-weight: bolder;
+}
+
+.number {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.line {
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info1, .info2 {
+  display: flex;  
+}
+
+/*동그라미 영역*/
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*다중라인에서만 작동*/
+  row-gap: 20px;
+  column-gap: 10px;  
+}
+
+.circle {
   width: 200px;
   height: 200px;
-  font-size: 24px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+  background-color: skyblue;
+  border-radius: 50%;
+}
+
+/* 4,5,6번째 원 */
+.circle:nth-child(n+4):nth-child(-n+6) {
+  background-color: gray;
+}
+
+/* 7,8,9번째 원 */
+.circle:nth-child(n+7):nth-child(-n+9) {
+  background-color: green;
 }
